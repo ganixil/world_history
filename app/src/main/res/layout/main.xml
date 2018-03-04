@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/white">
+    android:background="@color/intro_background"
+    android:weightSum="1">
 
-    <helper.GifImageView
-        android:id = "@+id/GifImageView"
-        android:layout_height=""
-        android:layout_width="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/marg_bot"
-        android:layout_centerInParent="true" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="341dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.04"
+        android:src="@drawable/wlogo" />
+
+    <Button
+        android:id="@+id/intro-inter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:text="- Enter -"
+        android:background="@color/intro_background"
+        android:textSize="30dp"
+        />
+
 
 </LinearLayout>
 
